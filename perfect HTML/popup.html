@@ -1,0 +1,28 @@
+<a href="#popup1">Open POPUP</a>
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <a class="close close-pop" href="#0">Close POPUP</a>
+        <div class="pop-content">
+            <h4>YOUR CONTENT GOES HERE!</h4>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 999;
+    }
+    
+    .overlay:target {
+        visibility: visible;
+        opacity: 1;
+    }
+</style>

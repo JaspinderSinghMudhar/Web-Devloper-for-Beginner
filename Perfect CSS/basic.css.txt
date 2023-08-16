@@ -1,0 +1,39 @@
+*{transition-duration: 0.5s ease-in-out;}
+/* *{outline: 1px solid red;} */
+:root {--o: #f68e34;--b: #024D6F;--lb: #06b6e3;}
+h1, h2, h3, h4, h5, h6, label{font-family: 'Oswald', sans-serif; margin: 0.4rem 0rem;}
+ p, li, a, span, td, th, tr{font-family: 'Titillium Web', sans-serif;}
+.flex-js{display:flex;flex-wrap: wrap;}
+.flex-center-js{justify-content: center;align-items:center;} 
+.relative-js{position: relative;}
+.img-js{width:100%;height: auto;}
+.w-js{background-color: #fff;}
+.wd-js{background-color: #F1F1F1}
+.t-js{background-color: transparent;}
+.js_100{width: 100%;}
+.js_80{width: 80%;}
+.js_70{width: 70%;}
+.js_65{width: 65%;}
+.js_60{width: 60%;}
+.js_45{width: 45%;}
+.js_33{width: 33.333%;}
+.js_30{width: 30%;}
+.js_20{width: 20%;}
+p {margin-bottom: 1rem;}
+h1, h2, h3, h4, h5 {line-height: 1.3;}
+
+/* Font-size : clamp(min-size, Current Size, Max-Size);  Fully Responsive Font CSS*/
+h1{font-size : clamp(26px, 10vw, 40px);}
+h2 { font-size : clamp(24px, 10vw, 36px);}
+h3 { font-size : clamp(22px, 10vw, 32px);}
+h4 { font-size : clamp(20px, 10vw, 28px);}
+h5 { font-size : clamp(18px, 10vw, 22px);}
+h6,p{ font-size : clamp(16px, 10vw, 16px);}
+small{font-size : clamp(14px, 10vw, 14px);}
+
+
+.container {width: 100%;margin-right: auto;margin-left: auto;} 
+@media (min-width: 576px) {.container {width: 540px;}}
+@media (min-width: 768px) {.container {width: 720px;}}
+@media (min-width: 992px) {.container {width: 960px;}}
+@media (min-width: 1200px){.container {width: 1140px;}}

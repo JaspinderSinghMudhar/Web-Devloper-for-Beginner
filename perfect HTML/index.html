@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0px; height: 100%;">
+    <style>
+        .slider-body{
+             /* display:flex; */
+            overflow-x: scroll;
+            /* overflow: auto; */
+            white-space: nowrap;
+        }
+        .slider-body > section {
+            display: inline-block;
+        }
+    </style>
+    <div class="slider-body">
+        <a href="">Next</a><a onclick="sec_id()">Prev</a>
+        <section id="sec-5" style="background:#5900ff; height: 97.5vh; width:100%;"><h1 style="font-size:400px; margin: auto;"><a href="#sec-4" style=" text-decoration: none; color: #fff;">5</a></h1></section>
+        <section id="sec-4" style="background:#00a2ff; height: 97.5vh; width:100%;"><h1 style="font-size:400px; margin: auto;"><a href="#sec-3" style=" text-decoration: none; color: #fff;">4</a></h1></section>
+        <section id="sec-3" style="background:#00ff22; height: 97.5vh; width:100%;"><h1 style="font-size:400px; margin: auto;"><a href="#sec-2" style=" text-decoration: none; color: #fff;">3</a></h1></section>
+        <section id="sec-2" style="background:#ffee00; height: 97.5vh; width:100%;"><h1 style="font-size:400px; margin: auto;"><a href="#sec-1" style=" text-decoration: none; color: #fff;">2</a></h1></section>
+        <section id="sec-1" style="background:#ff004c; height: 97.5vh; width:100%;"><h1 style="font-size:400px; margin: auto;"><a href="#sec-5" style=" text-decoration: none; color: #fff;">1</a></h1></section>
+    </div>
+    <script>
+
+        function elementInViewport(el) {
+            var top = el.offsetTop-80;
+            var left = el.offsetLeft;
+            var width = el.offsetWidth;
+            var height = el.offsetHeight+100;
+
+            while(el.offsetParent) {
+            el = el.offsetParent;
+            top += el.offsetTop;
+            left += el.offsetLeft;
+            }
+
+            return (
+            top >= window.pageYOffset &&
+            left >= window.pageXOffset &&
+            (top + height) <= (window.pageYOffset + window.innerHeight) &&
+            (left + width) <= (window.pageXOffset + window.innerWidth)
+            );
+        }
+
+        function sec_id(){
+            this.getAttribute('')
+            elementInViewport(el)
+        }
+
+        // var root_w = screen.width, root_h = screen.height;
+        // document.querySelectorAll('section').forEach((e)=>{
+        //     e.style.height = root_h + 'px';
+        //     e.style.width = root_w + 'px';
+        // })
+
+        // XScroll = function() {
+        //     if (window.pageYOffset != undefined) {
+        //         return pageYOffset;
+        //     } else {
+        //         var sx, sy, d = document, r = d.documentElement, b = d.body;
+        //         sx = r.scrollLeft || b.scrollLeft || 0;
+        //         sy = r.scrollTop || b.scrollTop || 0;
+        //         // return [sx, sy];
+        //         // return sy;
+        //         window.scrollTo({ left: sy, behavior: 'smooth'});
+        //     }
+        // }
+
+        // setInterval(()=>{
+        //     console.log(XScroll())
+        // },10);
+        
+    </script>
+</body>
+</html>

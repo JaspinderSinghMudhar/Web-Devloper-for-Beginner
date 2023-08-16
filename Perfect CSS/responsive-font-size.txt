@@ -1,0 +1,33 @@
+h1{font-size : 40px;}
+h2 { font-size : 36px;}
+h3 { font-size : 30px;}
+h4 { font-size : 26px;}
+h5 { font-size : 20px;}
+h6,p{ font-size : 16px;}
+small{font-size : 14px;}
+
+@media (max-width:992px) {
+    h1{font-size : 38px;}
+    h2 { font-size : 34px;}
+    h3 { font-size : 30px;}
+    h4 { font-size : 24px;}
+    h5 { font-size : 18px;}
+    h6,p{ font-size : 16px;}
+    small{font-size : 14px;}
+}
+@media (max-width:768px) {
+    h1{font-size : 36px;}
+    h2 { font-size : 32px;}
+    h3 { font-size : 28px;}
+    h4 { font-size : 22px;}
+}
+
+@media (max-width:576px) {
+    h1{font-size : 34px;}
+    h2 { font-size : 30px;}
+    h3 { font-size : 26px;}
+    h4 { font-size : 20px;}
+    h5 { font-size : 18px;}
+    h6,p{ font-size : 16px;}
+    small{font-size : 14px;}
+}
