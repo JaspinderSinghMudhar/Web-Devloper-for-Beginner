@@ -6,7 +6,7 @@ DATA/Example :
 
 Simplified.com for Prompt creator
 
-Wisdolia Add on Chrome
+Wisdolia Addon Chrome
 - Useful for blogs and give use Q/A about Blog to understand
 
 AI       ||   Details
