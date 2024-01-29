@@ -1,3 +1,3 @@
 # Perfect-Start
 
-Rendom things for Web Devlopment.
+Important things for Web Development.
