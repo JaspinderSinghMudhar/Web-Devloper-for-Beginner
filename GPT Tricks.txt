@@ -1,13 +1,13 @@
-Context : make a charector that it can become and think like it.
-Task : The take we want him to do.
-Intstactions : nagitive and positive pointes that we want it to do.
+Context: make a character that it can become and think like it.
+Task: The take we want him to do.
+Instructions: negative and positive points that we want it to do.
 DATA/Example :
 --------------------------------------------------
 
 Simplified.com for Prompt creator
 
 Wisdolia Add on Chrome
-- Usefull for blogs and give use Q/A about Blog to understand
+- Useful for blogs and give use Q/A about Blog to understand
 
 AI       ||   Details
 Uberduck - TexttoVoice
