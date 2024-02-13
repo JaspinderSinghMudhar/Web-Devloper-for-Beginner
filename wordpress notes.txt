@@ -1,0 +1,99 @@
+
+----------------------------
+Theme Required to modify
+"Twenty Nineteen"
+[Can create any files if you create a new file inside the theme or you can create a folder inside the theme folder]
+----------------------------
+
+---------
+Template Name	
+<?php /* Template Name : Home Page */ ?>
+---------
+
+-----------------------
+wp_head();	
+[Use to get wordpress dashboard over the template]	
+-----------------------
+
+-----------------------
+get_search_form();
+[Use to get the search form]
+-----------------------
+
+$ search Template $
+-------------------------
+Main Template - "search.php";
+If Exist      - "template-part/content/cotent-excerpt.php"
+If not Exist  - "template-part/content/cotent-none.php"
+--------------------------
+
+
+$ Plugin $
+------------------------------------------------
+Clasic theme Editor     --- [Old theme editor]
+Contact Form 7	        --- [Form for data]
+Advanced Custom fields	--- [To make ease for other user]
+Coustom Post Type UI	--- [for custom post type for other product or else]
+-----------------------------------------------------------
+
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+$ Geeting Any Post data with PHP $
+-------------------------------------
+
+<?php
+
+$args = array(
+    'post_type'=>'post',      [Get data from post you can add any other post name if you have other post_type]
+    'post_per_page'=>-1,      [-1 means all the data || add any number you want to.]
+    'order'=>'DESC'           [DESC will display data latest to oldest]
+    [https://www.advancedcustomfields.com/resources/query-posts-custom-fields/]
+);
+
+$result = new WP_Query($args);              [Create a query for DB to get data]
+if($result->have_post()):                   [check if the query return any data from DB]
+    while($result ->have_post()):           [Run code While post have data init.]
+        $result -> the_post();              [End of frsit have where you call the post and wait for the result.]
+        ?>
+
+----------------------------------------------------
+    /* Normal HTML + PHP Code goes here */
+----------------------------------------------------
+
+<?php endwhile; ?> [Ending the while loop]
+<?php endif; ?>    [Ending the if statement]
+<?php wp_reset_postdata(); ?> [Reseting the post request]
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+$ Post Template files $
+--------------------------------
+
+Just create a file with the name of single.php
+For custom post type use "single-books.php" -- ["Single" is an identifer and "-books" is the post_type]
+In this file you can call the basic function such as : 
+    the_title();         [Return the page title]
+    the_content();       [Return all the content present in the clasic editor]
+    the_premalink();     [Return the url of the post]
+    [Other Customfields data if it exists]
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+
+
+
+
+
+
+
