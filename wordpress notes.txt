@@ -56,7 +56,7 @@ $args = array(
 $result = new WP_Query($args);              [Create a query for DB to get data]
 if($result->have_post()):                   [check if the query return any data from DB]
     while($result ->have_post()):           [Run code While post have data init.]
-        $result -> the_post();              [End of frist have where you call the post and wait for the result.]
+        $result -> the_post();              [End of frist half where you call the post and wait for the result.]
         ?>
 
 ----------------------------------------------------
