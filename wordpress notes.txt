@@ -20,6 +20,11 @@ get_search_form();
 [Use to get the search form]
 -----------------------
 
+--------------------------
+get_template_directory_uri()
+[Get theme dir url]
+--------------------------
+
 $ search Template $
 -------------------------
 Main Template - "search.php";
