@@ -33,7 +33,7 @@ $ Plugin $
 Clasic theme Editor     --- [Old theme editor]
 Contact Form 7	        --- [Form for data]
 Advanced Custom fields	--- [To make ease for other user]
-Coustom Post Type UI	--- [for custom post type for other product or else]
+Custom Post Type UI	--- [for custom post type for other product or else]
 -----------------------------------------------------------
 
 
