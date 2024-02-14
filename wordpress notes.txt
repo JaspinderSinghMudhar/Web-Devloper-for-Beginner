@@ -5,10 +5,18 @@ Theme Required to modify
 [Can create any files if you create a new file inside the theme or you can create a folder inside the theme folder]
 ----------------------------
 
----------
+---------------------------------------------------
 Template Name	
 <?php /* Template Name : Home Page */ ?>
----------
+or 
+<?php
+/*
+Template Name: home page
+Template Post Type: page
+*/ ?>
+-------------------------------------------------
+
+
 
 -----------------------
 wp_head();	
