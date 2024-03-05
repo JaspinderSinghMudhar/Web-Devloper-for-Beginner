@@ -1,1 +1,4 @@
- CheetSheet -:- https://oscarotero.com/jquery/
+ CheetSheets
+ 
+ https://oscarotero.com/jquery/
+ https://htmlcheatsheet.com/jquery/
