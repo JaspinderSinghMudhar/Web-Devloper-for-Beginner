@@ -1,5 +1,5 @@
 Context: make a character that it can become and think like it.
-Task: The take we want him to do.
+Task: The task we want him to do.
 Instructions: negative and positive points that we want it to do.
 DATA/Example :
 --------------------------------------------------
