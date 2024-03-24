@@ -12,7 +12,7 @@
  	}
  }
  if (is_user_from_us()) {
- 	echo "<script>window.location.href='https://igzy.com';</script>";
+ 	echo "<script>window.location.href='https://blog.jaspinder-singh.com';</script>";
  	exit();
  } else {}
 ?>
