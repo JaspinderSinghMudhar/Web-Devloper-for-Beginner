@@ -37,3 +37,6 @@ small{font-size : clamp(14px, 10vw, 14px);}
 @media (min-width: 768px) {.container {width: 720px;}}
 @media (min-width: 992px) {.container {width: 960px;}}
 @media (min-width: 1200px){.container {width: 1140px;}}
+
+/* border or margin will not overlap the image of svg */
+/* overflow-clip-margin: border-box; */
